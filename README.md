@@ -1,5 +1,9 @@
 # MT Central Intelligence · demo mode
 
+### ▶ [Live demo: gitswagata1.github.io/mt-central](https://gitswagata1.github.io/mt-central/)
+
+A static snapshot of demo mode with interactive charts, alerts, and copilot answers that show their SQL. All data is synthetic.
+
 > **Problem:** procurement data for 15 plants sits in SAP, and plant heads only see overspend, late vendors and supplier concentration after the fact.
 > **Solution:** load SAP purchase-order extracts into DuckDB, run alert rules as SQL, and let users ask questions through a copilot that always shows the SQL and rows behind its answer.
 >
@@ -32,6 +36,10 @@ streamlit run app.py           # dashboard loads in about 3 s
 ```
 
 The page shows **"Demo mode · synthetic data"** at the top.
+
+## Hosted demo
+
+`python build_pages.py` renders `docs/` (a static HTML snapshot plus Plotly) from the synthetic DuckDB, using the same SQL as the app. GitHub Pages serves `docs/`.
 
 ## About the synthetic data
 
